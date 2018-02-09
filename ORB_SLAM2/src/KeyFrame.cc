@@ -23,6 +23,8 @@
 #include "ORBmatcher.h"
 #include<mutex>
 
+
+//chris test modify in 2018/2/9 15:10
 namespace ORB_SLAM2
 {
 
