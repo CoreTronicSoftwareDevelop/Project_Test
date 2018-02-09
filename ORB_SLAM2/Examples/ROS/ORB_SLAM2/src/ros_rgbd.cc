@@ -34,6 +34,8 @@
 
 #include"../../../include/System.h"
 
+
+//this is a modfiy to add
 using namespace std;
 
 class ImageGrabber
@@ -43,9 +45,16 @@ public:
 
     void GrabRGBD(const sensor_msgs::ImageConstPtr& msgRGB,const sensor_msgs::ImageConstPtr& msgD);
 
+    int test(int k);
     ORB_SLAM2::System* mpSLAM;
+    
 };
-
+int ImageGrabber::test(int k)
+{
+	  
+   		return k+100;
+   		
+}
 int main(int argc, char **argv)
 {
     ros::init(argc, argv, "RGBD");
