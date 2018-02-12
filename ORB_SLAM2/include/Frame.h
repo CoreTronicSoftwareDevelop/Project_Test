@@ -206,6 +206,7 @@ private:
     cv::Mat mtcw;
     cv::Mat mRwc;
     cv::Mat mOw; //==mtwc
+    int testValue;
 };
 
 }// namespace ORB_SLAM
