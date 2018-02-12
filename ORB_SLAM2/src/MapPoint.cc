@@ -22,7 +22,7 @@
 #include "ORBmatcher.h"
 
 #include<mutex>
-//Test by chris chang in 2018/2/12
+
 namespace ORB_SLAM2
 {
 
@@ -40,9 +40,6 @@ MapPoint::MapPoint(const cv::Mat &Pos, KeyFrame *pRefKF, Map* pMap):
 
     // MapPoints can be created from Tracking and Local Mapping. This mutex avoid conflicts with id.
     unique_lock<mutex> lock(mpMap->mMutexPointCreation);
-    //mnId=nNextId++;
-
-   
     mnId=nNextId++;
 }
 
